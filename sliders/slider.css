@@ -1,59 +1,120 @@
-.container-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.carousel-container {
-  width: 80%;
-  overflow: hidden;
-  position: relative;
-}
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-.card {
-  background-color: #fff;
-  min-width: 25%;
-  box-sizing: border-box;
-  padding: 20px;
-  margin-right: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  border-radius: 8px;
-}
-.navigation {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-.nav-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 18px;
-}
-.nav-button:disabled {
-  background-color: #888;
-  cursor: not-allowed;
-}
-.image-container {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.images-box {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+body {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+
+  .card {
+    background-color: #fff;
+    width: 285px;
+    height: 321px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .container-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    opacity: 0px;
+    width: Fill (243px) px;
+    height: Hug (249px) px;
+
+    .images-box {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+
+    .designation {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+
+    .country {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #6b6b6b;
+      padding-top: 2px;
+    }
+  }
+
+  .carousel-container {
+    width: 1300px;
+    height: 321px;
+    overflow: hidden;
+    position: relative;
+
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      transition: transform 0.5s ease;
+    }
+
+    .navigation {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform: translateY(-50%);
+
+      .nav-button {
+        text-align: center;
+        color: #6f6f6f;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 18px;
+        width: 36px;
+        height: 36px;
+        top: 360px;
+        left: 1350px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #dadada;
+      }
+
+      .nav-button:disabled {
+        cursor: not-allowed;
+      }
+
+      .nav-button:hover {
+        background-color: gray;
+        color: white;
+      }
+    }
+  }
 }
